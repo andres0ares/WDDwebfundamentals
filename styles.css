@@ -1,15 +1,35 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+html, body{
   margin: 0;
-  border: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-}
-nav{
-  line-height: 70px;
   background-color: #134266;
 }
+ #content {
+   width: 70%;
+   margin: auto;
+   background-color: #eaeaea;
+ }
+
+/* nav */
+ul{
+  margin: 0;
+}
+li:hover  {
+  background-color: #eaeaea;
+  color: #134266;
+}
+li:hover a {
+  color: #134266;
+}
+nav{
+  margin: 0;
+  line-height: 70px;
+  background-color: #78C5D7;
+}
 nav a{
-  margin: 10px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
   text-decoration: none;
   color: white;
 }
@@ -18,53 +38,99 @@ nav > ul {
   list-style-type: none;
 }
 .logo-box{
+  font-family: 'Pacifico', cursive;
+  height: 70px;
   float: left;
   margin-left: 5%;
-  background-color: white;
+  /*background-color: white;*/
 }
 .logo-box img{
   height: 70px;
 }
-
-
-
-
-.main-block{
-  margin: 0 20% 0 20%;
+h2 {
+  font-size: 1.5rem;
 }
+h1, h2, h3, h4, h5{
+  color: #78C5D7;
+  font-family: 'Open Sans', sans-serif;
+}
+/*banner*/
+
+.banner {
+  background-image: url("https://cdn.glitch.com/3b5b7c61-d8ba-4520-b915-3e757aee15dc%2Fezgif.com-resize.gif?v=1589672953091");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-banner {
+  width: 25%;
+  margin-left: 40%;
+  margin-top: 7%;
+}
+
+/* main block*/
 
 #img-banner{
   width: 100%;
+  margin: 0 0 5% 0;
 }
 
-#img-2 , .home-grid-1{
-  width: 50%;
+/*.main-block{
+  width: 95%;
   float: right;
-  
+}*/
+
+.home-grid-1{
+  margin-left: 5%;
+  padding-top: 80px;
+  text-align: right;
+  line-height: 30pt;
+}
+.home-grid-2 {
+  margin-right: 5%;
+  padding-top: 80px;
+  clear: both;
+  line-height: 30pt;
 }
 
-#img-1 , .home-grid-2{
-  width: 50%;
+#img-1 {
+  margin-left: 30px;
+  border-right: 50px solid #78C5D7;
+  width: 40%;
+  float: right;
+}
+#img-2 {
+  border-left: 50px solid #78C5D7;
+  margin-right: 30px;
+  width: 40%;
   float: left;
 }
 
 .home-grid-3  {
-  float: left;
-  width: 100%;
   text-align: center;
+  padding: 80px 0 80px 0; 
+  width: 40%;
+  margin: auto;
+  display: block;
+  clear: both;
 }
+
+
+/* footer*/
 
 
 .img-social{
   width: 30px;
   height: 30px;
-  margin: 10px 10px 10px 10px;
+  margin: 0 10px 0 10px;
 }
 
 footer{
   float: left;
   width: 100%;
-  background-color: black;
+  background-color: #78C5D7;
   color: white;
 }
 footer p {
@@ -73,4 +139,5 @@ footer p {
 }
 .social{
   text-align: right;
+  margin-top: 11px;
 }
